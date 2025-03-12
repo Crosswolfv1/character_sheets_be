@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateCharacterSheets < ActiveRecord::Migration[6.0]
+class CreateCharacterSheets < ActiveRecord::Migration[6.0] # rubocop:disable Style/Documentation
   def change
     create_table :character_sheets, id: :string do |t|
       t.references :user, foreign_key: true, type: :string
