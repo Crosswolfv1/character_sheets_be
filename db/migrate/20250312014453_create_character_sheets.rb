@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateCharacterSheets < ActiveRecord::Migration[6.0]
   def change
     create_table :character_sheets, id: :string do |t|

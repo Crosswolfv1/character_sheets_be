@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateGameSystems < ActiveRecord::Migration[6.0]
   def change
     create_table :game_systems, id: :string do |t|
